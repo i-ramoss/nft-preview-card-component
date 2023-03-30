@@ -93,6 +93,13 @@ hr {
 
   color: var(--white);
   font-size: 2rem;
+
+  transition: color 0.2s linear;
+}
+
+.nft-name:hover {
+  color: var(--cyan);
+  cursor: pointer;
 }
 
 .description {
@@ -132,6 +139,12 @@ hr {
 
 .creator p {
   color: var(--white);
+  transition: color 0.2s linear;
+}
+
+.creator p:hover {
+  color: var(--cyan);
+  cursor: pointer;
 }
 
 .creator p span {
