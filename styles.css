@@ -1,0 +1,120 @@
+:root {
+  /* primary */
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+
+  /* neutral */
+  --main-bg: hsl(217, 54%, 11%);
+  --card-bg: hsl(216, 50%, 16%);
+  --line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Outfit", sans-serif;
+  height: 100vh;
+  background-color: var(--main-bg);
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+hr {
+  border: 1px solid var(--line);
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.6rem;
+
+  width: 25rem;
+  height: 45rem;
+  background-color: var(--card-bg);
+  border-radius: 1.2rem;
+  padding: 1.6rem;
+
+  box-shadow: 0 30px 0 15px hsla(217, 54%, 10%, 0.2),
+    0 20px 0 40px hsla(217, 54%, 15%, 0.2);
+}
+
+.nft-image {
+  width: 25rem;
+  height: 25rem;
+  border-radius: 0.8rem;
+}
+
+.nft-name {
+  align-self: flex-start;
+
+  color: var(--white);
+  font-size: 2rem;
+}
+
+.description {
+  color: var(--soft-blue);
+}
+
+.nft-data,
+.value,
+.time,
+.creator {
+  display: flex;
+  align-items: center;
+}
+
+.nft-data {
+  gap: 6rem;
+}
+
+.value,
+.time {
+  gap: 0.5rem;
+}
+
+.value h4 {
+  font-size: 1.6rem;
+  color: var(--cyan);
+}
+
+.time p {
+  color: var(--soft-blue);
+}
+
+.creator {
+  align-self: flex-start;
+  gap: 1.8rem;
+}
+
+.creator p {
+  color: var(--white);
+}
+
+.creator p span {
+  color: var(--soft-blue);
+}
+
+.creator-image {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: 1px solid var(--white);
+}
